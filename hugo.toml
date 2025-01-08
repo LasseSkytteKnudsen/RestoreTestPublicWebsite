@@ -1,3 +1,4 @@
 baseURL = 'https://restoretest.dk/'
 languageCode = 'en-us'
 title = 'RestoreTest'
+theme = 'ananke'
