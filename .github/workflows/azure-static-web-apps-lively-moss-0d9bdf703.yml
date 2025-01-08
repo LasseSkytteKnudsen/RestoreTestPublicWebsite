@@ -32,6 +32,22 @@ jobs:
                const coredemo = require('@actions/core')
                return await coredemo.getIDToken()
            result-encoding: string
+          
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+           hugo-version: '0.140.2' # replace this with your desired Hugo version
+           extended: true
+
+      - name: Install Node.js (for Azure Static Web Apps)
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Ensure Node.js is installed as Oryx requires it
+      - name: Install NPM Modules
+        run: npm install
+      - name: Build Hugo site
+        run: hugo  # This will use the Hugo version installed by the previous step
+      
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
