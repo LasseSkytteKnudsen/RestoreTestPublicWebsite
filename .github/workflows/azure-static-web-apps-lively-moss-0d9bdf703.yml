@@ -46,7 +46,7 @@ jobs:
       - name: Install NPM Modules
         run: npm install
       - name: Build Hugo site
-        run: hugo --log -v  # This will use the Hugo version installed by the previous step
+        run: hugo   # This will use the Hugo version installed by the previous step
 
         
       - name: output files
