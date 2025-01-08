@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true
+          submodules: 'true'  # Fetch Hugo themes (if any). Set to 'false' if you don't have Hugo themes as Git submodules
           lfs: false
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
@@ -46,7 +46,7 @@ jobs:
       - name: Install NPM Modules
         run: npm install
       - name: Build Hugo site
-        run: hugo  # This will use the Hugo version installed by the previous step
+        run: hugo --log -v  # This will use the Hugo version installed by the previous step
 
         
       - name: output files
@@ -62,7 +62,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
+          output_location: "" # Built app content directory - optional
           github_id_token: ${{ steps.idtoken.outputs.result }}
           app_build_command: "hugo"
           skip_app_build: true # Skip the build step and deploy source files directly. false by default
