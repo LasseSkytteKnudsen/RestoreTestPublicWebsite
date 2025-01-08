@@ -50,7 +50,7 @@ jobs:
 
         
       - name: output files
-        run: ls
+        run: ls public
 
       - name: Build And Deploy
         id: builddeploy
