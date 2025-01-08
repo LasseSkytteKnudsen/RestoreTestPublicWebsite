@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:55685/posts/my-first-post/</loc>
+    <loc>https://restoretest.dk/posts/my-first-post/</loc>
     <lastmod>2025-01-08T20:02:47+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:55685/posts/</loc>
+    <loc>https://restoretest.dk/posts/</loc>
     <lastmod>2025-01-08T20:02:47+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:55685/</loc>
+    <loc>https://restoretest.dk/</loc>
     <lastmod>2025-01-08T20:02:47+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:55685/categories/</loc>
+    <loc>https://restoretest.dk/categories/</loc>
   </url><url>
-    <loc>http://localhost:55685/tags/</loc>
+    <loc>https://restoretest.dk/tags/</loc>
   </url>
 </urlset>
