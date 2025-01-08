@@ -22,6 +22,7 @@ jobs:
         with:
           submodules: 'true'  # Fetch Hugo themes (if any). Set to 'false' if you don't have Hugo themes as Git submodules
           lfs: false
+          fetch-depth: 0  # Fetch all history for .GitInfo and .Lastmod
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
       - name: Get Id Token
